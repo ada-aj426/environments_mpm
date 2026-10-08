@@ -9,7 +9,7 @@ dependencies:
   - matplotlib>=3.10
   - scipy,
   - scikit-image,
-  - sympy
+  - sympy,
   - pandas
   - pip:
       - -e . # install local repo
