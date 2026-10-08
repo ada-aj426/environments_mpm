@@ -1,8 +1,9 @@
 import numpy as np
 from scipy.ndimage import gaussian_filter
+import pandas as pd
 
 
-__all__ = ['rand_array', 'smooth_image', 'my_mat_solve']
+__all__ = ['rand_array', 'smooth_image', 'my_mat_solve', 'pandas_func']
 
 
 def rand_array(shape):
@@ -13,3 +14,6 @@ def smooth_image(a, sigma=1):
 
 def my_mat_solve(A, b):
     return A.inv()*b
+
+def pandas_func(x):
+    return pd.DataFrame(x)
